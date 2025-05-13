@@ -39,11 +39,6 @@ function App() {
     return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
   };
 
-  // Toggle possession
-  const togglePossession = () => {
-    setHomePossession(!homePossession);
-    setGuestPossession(!guestPossession);
-  };
 
   // Change period
   const changePeriod = () => {
