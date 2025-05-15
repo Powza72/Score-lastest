@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 
 function App() {
   // Game state
-  const [homeScore, setHomeScore] = useState(9);
+  const [homeScore, setHomeScore] = useState(0);
   const [guestScore, setGuestScore] = useState(0);
   const [gameTime, setGameTime] = useState(600); // 24:00 format
   const [period, setPeriod] = useState(1);
@@ -224,7 +224,7 @@ function App() {
                 onClick={() => setGuestScore(guestScore + 3)}
                 className="bg-gray-800 hover:bg-gray-700 text-white py-2 rounded">
                 +3
-              </button>
+              </button>ฤ
               <button 
                 onClick={() => setGuestScore(Math.max(0, guestScore - 1))}
                 className="bg-red-900 hover:bg-red-800 text-white py-2 rounded">
